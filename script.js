@@ -60,9 +60,9 @@ var vue = new Vue({
         } ,
         winnerImage() {
             if (this.awesomeDude == 1)
-                return "player1.png";
+                return "player 1.png";
             else if (this.awesomeDude == 2)
-                return "player2.png";
+                return "player 2.png";
             else {
                 return "imageholder.png";
             }
