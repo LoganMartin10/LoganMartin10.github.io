@@ -69,9 +69,9 @@ var vue = new Vue({
         },
         playerImage() {
             if (this.Dragon == 1)
-                return "player1wins.png";
+                return "player-1-wins.png";
             else if (this.Dragon == 2)
-                return "player2wins.png";
+                return "player-2-wins.png";
             else {
                 return "imageholder.png";
             }
