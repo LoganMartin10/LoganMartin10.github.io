@@ -8,13 +8,13 @@ var vue = new Vue({
         p2Move : 0,
         interval: null,
         moving: true,
-        awesomeDude: 0
+        Dragon: 0
     },
     methods: {
         startRace() {
             if (this.race) {
                 this.race = false;
-                this.awesomeDude = 0;
+                this.Dragon = 0;
                 this.racing = true;
                 this.moving = true;
                 this.p1Move = 0;
@@ -46,11 +46,11 @@ var vue = new Vue({
             }
         } ,
         player1Win() {
-            this.awesomeDude = 1;
+            this.Dragon = 1;
             this.racing = false;
         } ,
         player2Win() {
-            this.awesomeDude = 2;
+            this.Dragon = 2;
             this.racing = false;
         }
     },
@@ -59,18 +59,18 @@ var vue = new Vue({
             return this.racing ? "moveFlask.png" : "startFlask.png";
         } ,
         winnerImage() {
-            if (this.awesomeDude == 1)
+            if (this.Dragon == 1)
                 return "player1.png";
-            else if (this.awesomeDude == 2)
+            else if (this.Dragon == 2)
                 return "player2.png";
             else {
                 return "imageholder.png";
             }
         },
         playerImage() {
-            if (this.awesomeDude == 1)
+            if (this.Dragon == 1)
                 return "player-1-wins.png";
-            else if (this.awesomeDude == 2)
+            else if (this.Dragon == 2)
                 return "player-2-wins.png";
             else {
                 return "imageholder.png";
