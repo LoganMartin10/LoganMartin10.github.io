@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+
+    background-image: url("whitehouses.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.JoeBiden {
+    position: absolute;
+    bottom: 35vh;
+    left: 0;
+}
+.DonaldTrump {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+}
+.WinnerWinner {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    top: 10%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+.RFlag {
+    position: absolute;
+}
+.GFlag {
+    position: absolute;
+}
